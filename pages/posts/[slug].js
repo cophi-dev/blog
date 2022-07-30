@@ -1,5 +1,7 @@
+import Head from "next/head";
 import styles from "../../styles/Slug.module.css";
 import { GraphQLClient, gql } from "graphql-request";
+import Header from "../../components/Header";
 
 const graphcms = new GraphQLClient(
   "https://api-eu-central-1.hygraph.com/v2/cl64t5n1j8dbq01uka85vdum1/master"
@@ -61,6 +63,10 @@ export async function getStaticProps({ params }) {
 export default function BlogPost({ post }) {
   return (
     <main className={styles.blog}>
+      <Head>
+        <title>Cophi - {post.title}</title>
+      </Head>
+      <Header />
       <img src={post.coverPhoto.url} className={styles.cover} />
       <div className={styles.title}>
         <div className={styles.authdetails}>

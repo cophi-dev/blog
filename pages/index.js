@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { GraphQLClient, gql } from "graphql-request";
 import BlogCard from "../components/BlogCard";
+import Header from "../components/Header";
 
 const graphcms = new GraphQLClient(
   "https://api-eu-central-1.hygraph.com/v2/cl64t5n1j8dbq01uka85vdum1/master"
@@ -48,10 +49,9 @@ export default function Home({ posts }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Cophi's Code</title>
-        <meta name="description" content="A blog tutorial made with JAMstack" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Cophi' Code</title>
       </Head>
+      <Header />
 
       <main className={styles.main}>
         {posts.map((post) => (
