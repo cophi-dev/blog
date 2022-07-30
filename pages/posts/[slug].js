@@ -21,6 +21,12 @@ const QUERY = gql`
           url
         }
       }
+      category {
+        name
+        image {
+          url
+        }
+      }
       content {
         html
       }
@@ -61,19 +67,28 @@ export async function getStaticProps({ params }) {
 }
 
 export default function BlogPost({ post }) {
+  const title = `Cophi - ${post.title}`;
   return (
     <main className={styles.blog}>
       <Head>
-        <title>Cophi - {post.title}</title>
+        <title>{title}</title>
       </Head>
       <Header />
       <img src={post.coverPhoto.url} className={styles.cover} />
       <div className={styles.title}>
-        <div className={styles.authdetails}>
-          <img src={post.author.avatar.url} />
-          <div className={styles.authtext}>
-            <h6>By {post.author.name}</h6>
-            <h6 className={styles.date}>{post.datePublished}</h6>
+        <div className={styles.details}>
+          <div className={styles.auth}>
+            <img src={post.author.avatar.url} />
+            <div className={styles.authtext}>
+              <h6>By {post.author.name}</h6>
+              <h6 className={styles.date}>{post.datePublished}</h6>
+            </div>
+          </div>
+          <div className={styles.cat}>
+            <div className={styles.cattext}>
+              <h6>By {post.category.name}</h6>
+            </div>
+            <img src={post.category.image.url} />
           </div>
         </div>
         <h2>{post.title}</h2>

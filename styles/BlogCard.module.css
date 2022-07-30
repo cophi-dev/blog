@@ -6,6 +6,7 @@
 }
 .card h2 {
   padding: 0.5rem 0rem;
+  text-align: center;
 }
 .card h3 {
   font-size: 1rem;
@@ -30,7 +31,7 @@
 .details {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 0.5rem 0rem;
 }
 
@@ -45,6 +46,16 @@
   align-items: center;
 }
 .author img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.category {
+  display: flex;
+  align-items: center;
+}
+.category img {
   width: 2rem;
   height: 2rem;
   border-radius: 50%;
