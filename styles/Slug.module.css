@@ -85,12 +85,15 @@
 
 @media screen and (max-width: 768px) {
   .blog {
-    margin: 0rem 2rem;
+    margin: 0rem 1rem;
   }
   .content {
     width: 100%;
   }
   .content img {
     width: 100%;
+  }
+  .cat {
+    display: none;
   }
 }
