@@ -71,6 +71,11 @@
     width: 100%;
   }
 
+  .imgContainer {
+    width: 100%;
+    padding: 0rem 10rem;
+  }
+
   .category {
     display: none;
   }
