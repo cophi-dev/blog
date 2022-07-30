@@ -65,7 +65,10 @@
 @media screen and (max-width: 768px) {
   .card {
     margin: 0rem 1rem;
-    width: 90%;
+  }
+
+  .details {
+    width: 100%;
   }
 
   .category {
