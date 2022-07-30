@@ -57,9 +57,9 @@ export default function Home({ posts }) {
       <Head>
         <title>Cophi's Code</title>
       </Head>
-      <Header />
 
       <main className={styles.main}>
+        <Header />
         {posts.map((post) => (
           <BlogCard
             title={post.title}
