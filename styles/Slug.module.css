@@ -9,8 +9,19 @@
   padding-bottom: 2rem;
 }
 
+.content {
+  text-align: justify;
+  text-justify: inter-word;
+}
+.content h1 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  font-weight: bold;
+}
 .content p {
   font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
 }
 
 .details {
@@ -81,6 +92,11 @@
   padding: 1rem;
   margin: 2rem 0rem;
   border-radius: 2rem;
+}
+
+.content img {
+  display: block;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
