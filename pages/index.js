@@ -56,11 +56,6 @@ export default function Home({ posts }) {
     <div className={styles.container}>
       <Head>
         <title>Cophi's Code</title>
-        <meta name="twitter:card" content={post.category.name} />
-        <meta name="twitter:site" content="https://twitter.com/_cophi_" />
-        <meta name="twitter:title" content="Cophi's Blog" />
-        <meta name="twitter:description" content="test" />
-        <meta name="twitter:image" content={category.image.url} />
       </Head>
 
       <main className={styles.main}>
