@@ -119,8 +119,22 @@
     width: 100%;
   }
   .content img {
-    width: 100%;
+    width: 90%;
   }
+
+  .content h1 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  .content a {
+    text-decoration: underline;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    line-height: 1.7rem;
+  }
+
   .cat {
     display: none;
   }
