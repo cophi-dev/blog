@@ -31,7 +31,7 @@
 .details {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin: 0.5rem 0rem;
 }
 
@@ -66,14 +66,10 @@
   .card {
     width: 100%;
     margin: 0rem 1rem;
-    overflow-x: hidden;
   }
 
   .details {
     width: 100%;
-  }
-
-  .imgContainer {
   }
 
   .category {
