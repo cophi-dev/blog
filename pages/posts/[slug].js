@@ -86,7 +86,7 @@ export default function BlogPost({ post }) {
           </div>
           <div className={styles.cat}>
             <div className={styles.cattext}>
-              <h6>By {post.category.name}</h6>
+              <h6>{post.category.name}</h6>
             </div>
             <img src={post.category.image.url} />
           </div>
