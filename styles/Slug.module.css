@@ -113,7 +113,7 @@
 
 @media screen and (max-width: 768px) {
   .blog {
-    padding: 0rem 2rem;
+    padding: 0rem 1rem;
     width: 100%;
     overflow-x: hidden;
   }
@@ -137,7 +137,6 @@
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     line-height: 1.7rem;
-    display: none;
   }
 
   .cat {
