@@ -68,11 +68,6 @@
     width: 100%;
     overflow-x: hidden;
   }
-  .imgContainer {
-    padding: 0rem 1rem;
-    width: 100%;
-    overflow-x: hidden;
-  }
 
   .category {
     display: none;
