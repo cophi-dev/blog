@@ -6,7 +6,7 @@ function Header() {
   return (
     <Link href="/">
       <a>
-        <div className={styles.title}>cophi.online</div>
+        <div className={styles.title}>cophi.blog</div>
       </a>
     </Link>
   );
